@@ -7,4 +7,9 @@ const create = async (req, res) => {
   return res.status(201).json(newTask);
 };
 
-module.exports = { create };
+const getTasks = async (req, res) => {
+  const tasks = await service.getTasks();
+  return res.status(200).json(tasks)
+}
+
+module.exports = { create, getTasks };
