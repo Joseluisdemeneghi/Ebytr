@@ -16,4 +16,11 @@ const toDoSchema = new Schema({
   },
 });
 
-const task = model("task", toDoSchema);
+const TASK = model("task", toDoSchema);
+
+const create = async (data) => {
+  const newTask = await new TASK(data).save();
+  return newTask;
+};
+
+module.exports = { create };
