@@ -23,4 +23,9 @@ const create = async (data) => {
   return newTask;
 };
 
-module.exports = { create };
+const getTasks = async () => {
+  const tasks = await TASK.find();
+  return tasks;
+}
+
+module.exports = { create, getTasks };
