@@ -5,4 +5,6 @@ const create = async (data) => {
   return task;
 };
 
-module.exports = { create };
+const getTasks = async () => await model.getTasks();
+
+module.exports = { create, getTasks };
