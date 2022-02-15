@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/Joseluisdemeneghi/Ebytr/issues"
   },
-  "homepage": "https://github.com/Joseluisdemeneghi/Ebytr#readme"
+  "homepage": "https://github.com/Joseluisdemeneghi/Ebytr#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "mongoose": "^6.2.1"
+  }
 }
