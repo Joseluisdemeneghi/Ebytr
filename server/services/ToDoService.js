@@ -9,4 +9,6 @@ const getTasks = async () => await model.getTasks();
 
 const updateTask = async (id, data) => await model.updateTask(id, data);
 
-module.exports = { create, getTasks, updateTask };
+const deleteTask = async (id) => await model.deleteTask(id);
+
+module.exports = { create, getTasks, updateTask, deleteTask };
