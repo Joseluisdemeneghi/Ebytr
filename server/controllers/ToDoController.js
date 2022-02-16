@@ -18,4 +18,4 @@ const updateTask = async (req, res) => {
   return res.status(200).json(updatedTask);
 };
 
-module.exports = { create, getTasks };
+module.exports = { create, getTasks, updateTask };
