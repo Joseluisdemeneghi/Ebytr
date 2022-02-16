@@ -29,7 +29,9 @@ const getTasks = async () => {
 };
 
 const updateTask = async (id, data) => {
-  const task = await TASK.findOneAndUpdate({ _id: id }, data);
+  const task = await TASK.findOneAndUpdate(
+    { _id: id }, data, { returnOriginal: false }
+  );
   return task;
 }
 
