@@ -57,10 +57,10 @@ function Tasks() {
         <button type='submit' onClick={handleSubmit}>Nova Tarefa</button>
       </div>
       { tasksList && tasksList.map((task) => (
-        <div key={task._id}>
-          <p>{task.task}</p>
-          <p>{task.date}</p>
-          <p>{task.status}</p>
+        <div key={task._id} className="task-div">
+          <p className="task-info">{task.task}</p>
+          <p className="task-info">{task.date}</p>
+          <p className="task-info">{task.status}</p>
           <button type='submit' onClick={() => handleDelete(task._id)}>Delete</button>
         </div>
       ))}
