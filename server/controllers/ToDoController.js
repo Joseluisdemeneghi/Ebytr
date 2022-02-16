@@ -20,7 +20,7 @@ const updateTask = async (req, res) => {
 
 const deleteTask = async (req, res) => {
   const { id } = req.params;
-  const deletedTask = await service.updateTask(id);
+  const deletedTask = await service.deleteTask(id);
   return res.status(200).json(deletedTask);
 };
 
