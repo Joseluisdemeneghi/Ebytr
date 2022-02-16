@@ -26,6 +26,11 @@ const create = async (data) => {
 const getTasks = async () => {
   const tasks = await TASK.find();
   return tasks;
+};
+
+const updateTask = async (id, data) => {
+  const task = await TASK.findOneAndUpdate({ _id: id }, data);
+  return task;
 }
 
-module.exports = { create, getTasks };
+module.exports = { create, getTasks, updateTask };
